@@ -1,0 +1,163 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  width: 700px;
+  height: 280px;
+  padding-top: 3rem;
+}
+
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+.logo a {
+  font-size: 50px;
+  font-weight: 800;
+  float: left;
+  font-family: courier;
+  color: #252a34;
+}
+
+.navbar {
+  float: right;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: #E69A0C;
+  z-index: 1;
+  border-bottom: 1px solid #252a34;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 3px 0px 0px;
+  position: relative;
+}
+
+.line::after {
+  content: ' ';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: 22px;
+  transition: 0.5s;
+}
+
+.line:hover::after {
+  width: 100%;
+}
+
+.tbl-biru:hover::after {
+  background: none;
+  width: 0%;
+  transition: none;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+  padding-left: 5rem;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'comic sans-ms';
+  color: #252a34;
+}
+
+h2 {
+  padding-left: 5rem;
+  font-family: 'comic sans-ms';
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #252a34;
+  width: 100%;
+  line-height: 50px;
+}
+p {
+  margin: 10px 0px 10px 0px;
+  padding: 0px 5rem 10px 5rem;
+}
+
+a.tbl-biru {
+  background: #08d9d6;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-biru:hover {
+  background: #fc5185;
+  text-decoration: none;
+}
+
+a.tbl-pink {
+  background: #fc5185;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-pink:hover {
+  background: #08d9d6;
+  text-decoration: none;
+}
+
+
+footer {
+  padding:20px;
+  margin-top:30px;
+  background-color: rgb(46, 43, 43);
+  color: #fff;
+  text-align: center;
+}
